@@ -18,6 +18,7 @@ module.exports = function(app){
 app.route('/articles/all').get(articles.all);
 
 app.param('articleId', articles.articleByID);
+app.route('/articles/edit/:articleId').get(articles.edit);
 
 
 }
