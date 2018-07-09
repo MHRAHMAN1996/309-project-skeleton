@@ -67,7 +67,6 @@ exports.delete = function(req, res) {
 
 module.exports.update = function(req, res) {
   var article = req.article;
-
   	article = _.extend(article, req.body);
 
   	article.save(function(err) {
